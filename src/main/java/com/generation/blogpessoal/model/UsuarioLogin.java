@@ -1,5 +1,6 @@
 package com.generation.blogpessoal.model;
 
+//cria uma mascara e usa as informações necessárias da model usuario para fazer a autenticação do usuário
 public class UsuarioLogin {
 	
 	private Long id;

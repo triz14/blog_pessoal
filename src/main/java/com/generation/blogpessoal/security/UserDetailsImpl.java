@@ -8,6 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import com.generation.blogpessoal.model.Usuario;
 
+//Essa classe fornecer as info. básicas do Usuário para o Security
 public class UserDetailsImpl implements UserDetails {
 
 	private static final long serialVersionUID = 1L;

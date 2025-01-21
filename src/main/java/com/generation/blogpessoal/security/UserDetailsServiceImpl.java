@@ -13,12 +13,15 @@ import org.springframework.web.server.ResponseStatusException;
 import com.generation.blogpessoal.model.Usuario;
 import com.generation.blogpessoal.repository.UsuarioRepository;
 
+/* Classe que valida a existência de um usuário no Banco de dados 
+ * e retornar um Objeto da Classe UserDetailsImpl*/
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
 	
 	@Autowired
 	private UsuarioRepository usuarioRepository;
-
+	
+	// Sobrescrita do método que permite buscar um usuário no banco de dados e retornar no formato que a Security entende (UserDetails)
 	@Override
 	public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
 
